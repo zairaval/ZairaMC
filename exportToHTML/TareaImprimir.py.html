@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>TareaImprimir.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7ec3e6;}
+.s1 { color: #ebebeb;}
+.s2 { color: #54b33e;}
+.s3 { color: #ed864a; font-weight: bold;}
+.s4 { color: #33ccff; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#131314">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+TareaImprimir.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#Tarea 01-26 de Agosto de 2024</span>
+<span class="s0"># Zaira Valentina Avila Lazcano</span>
+<span class="s0">#Realizar las siguientes actividades:</span>
+<span class="s0"># Crear un script donde impriman un ejemplo de cada uno de los métodos listados en la página:</span>
+<span class="s0"># https://docs.python.org/3/tutorial/datastructures.html</span>
+
+<span class="s0">##list.append(x)</span>
+<span class="s1">celulas = [</span><span class="s2">&quot;astrocito&quot;</span><span class="s3">, </span><span class="s2">&quot;neurona&quot;</span><span class="s1">]</span>
+<span class="s1">celulas.append(</span><span class="s2">&quot;microglia&quot;</span><span class="s1">)</span>
+<span class="s1">print(celulas)</span>
+
+<span class="s0">##list.extend(iterable)</span>
+<span class="s1">cantneuronas = [</span><span class="s4">1</span><span class="s3">, </span><span class="s4">2</span><span class="s3">, </span><span class="s4">3</span><span class="s1">]</span>
+<span class="s1">more_cantneuronas = [</span><span class="s4">4</span><span class="s3">, </span><span class="s4">5</span><span class="s3">, </span><span class="s4">6</span><span class="s1">]</span>
+<span class="s1">cantneuronas.extend(more_cantneuronas)</span>
+<span class="s1">print(cantneuronas)</span>
+
+<span class="s0">##list.insert(i, x)</span>
+<span class="s1">neurotransmisores = [</span><span class="s2">&quot;dopamina&quot;</span><span class="s3">, </span><span class="s2">&quot;serotonina&quot;</span><span class="s3">, </span><span class="s2">&quot;glutamato&quot;</span><span class="s1">]</span>
+<span class="s1">neurotransmisores.insert(</span><span class="s4">1</span><span class="s3">,</span><span class="s2">&quot;gabba&quot;</span><span class="s1">)</span>
+<span class="s1">print(neurotransmisores)</span>
+
+<span class="s0">##list.remove(x)</span>
+<span class="s1">neurotransmisores.remove(</span><span class="s2">&quot;gabba&quot;</span><span class="s1">)</span>
+<span class="s1">print(neurotransmisores)</span>
+
+<span class="s0">##list.pop([i])</span>
+<span class="s1">asignar_posicion = [</span><span class="s4">1</span><span class="s3">, </span><span class="s4">2</span><span class="s3">,</span><span class="s4">3</span><span class="s3">,</span><span class="s4">4</span><span class="s3">,</span><span class="s4">5</span><span class="s3">,</span><span class="s4">6</span><span class="s3">,</span><span class="s4">7</span><span class="s1">]</span>
+<span class="s1">retirar_item = asignar_posicion.pop(</span><span class="s4">5</span><span class="s1">)</span>
+<span class="s1">print(asignar_posicion)</span>
+<span class="s1">print(retirar_item)</span>
+
+<span class="s0">##list.clear()</span>
+<span class="s1">eliminar_lobulos = [</span><span class="s4">1</span><span class="s3">, </span><span class="s4">2</span><span class="s3">,</span><span class="s4">3</span><span class="s3">,</span><span class="s4">4</span><span class="s3">,</span><span class="s4">5</span><span class="s3">,</span><span class="s4">6</span><span class="s3">,</span><span class="s4">7</span><span class="s1">]</span>
+<span class="s1">eliminar_lobulos.clear()</span>
+<span class="s1">print(eliminar_lobulos)</span>
+
+<span class="s0">##list.index(x[, start[, end]])</span>
+<span class="s1">lobulos = [</span><span class="s2">&quot;frontal&quot;</span><span class="s3">, </span><span class="s2">&quot;parietal&quot;</span><span class="s3">, </span><span class="s2">&quot;occipital&quot;</span><span class="s3">, </span><span class="s2">&quot;temporal&quot;</span><span class="s3">, </span><span class="s2">&quot;insula&quot;</span><span class="s3">, </span><span class="s2">&quot;limbico&quot;</span><span class="s1">]</span>
+<span class="s1">index = lobulos.index(</span><span class="s2">&quot;occipital&quot;</span><span class="s1">)</span>
+<span class="s1">print(index)</span>
+
+<span class="s0">##list.count(x)</span>
+<span class="s1">cerebro_lobulos= [</span><span class="s4">1</span><span class="s3">, </span><span class="s4">2</span><span class="s3">, </span><span class="s4">3</span><span class="s3">, </span><span class="s4">4</span><span class="s3">,</span><span class="s4">4</span><span class="s3">,</span><span class="s4">5</span><span class="s3">,</span><span class="s4">6</span><span class="s1">]</span>
+<span class="s1">count = cerebro_lobulos.count(</span><span class="s4">4</span><span class="s1">)</span>
+<span class="s1">print(count)</span>
+
+<span class="s0">##list.sort(*, key=None, reverse=False)</span>
+<span class="s1">neuronas = [</span><span class="s4">3</span><span class="s3">, </span><span class="s4">1</span><span class="s3">, </span><span class="s4">4</span><span class="s3">, </span><span class="s4">2</span><span class="s1">]</span>
+<span class="s1">neuronas.sort()</span>
+<span class="s1">print(neuronas)</span>
+
+<span class="s0">##list.reverse()</span>
+<span class="s1">glia = [</span><span class="s2">&quot;astrocitos&quot;</span><span class="s3">, </span><span class="s2">&quot;microglía&quot;</span><span class="s3">, </span><span class="s2">&quot;oligodendrocitos&quot;</span><span class="s1">]</span>
+<span class="s1">glia.reverse()</span>
+<span class="s1">print(glia)</span>
+
+<span class="s0">##list.copy()</span>
+<span class="s1">glia_list = [</span><span class="s4">1</span><span class="s3">, </span><span class="s4">2</span><span class="s3">,</span><span class="s4">3</span><span class="s3">,</span><span class="s4">4</span><span class="s3">,</span><span class="s4">5</span><span class="s3">,</span><span class="s4">6</span><span class="s3">,</span><span class="s4">7</span><span class="s3">,</span><span class="s4">8</span><span class="s3">,</span><span class="s4">9</span><span class="s3">,</span><span class="s4">10</span><span class="s1">]</span>
+<span class="s1">glia_list = glia_list.copy()</span>
+<span class="s1">print(glia_list)</span>
+
+
+</pre>
+</body>
+</html>
